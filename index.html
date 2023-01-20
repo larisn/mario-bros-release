@@ -6,24 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Mario Bros - O Filme</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="responsivo.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+
+    <div class="fundo-video">
+        <video src="src/video-mario.mp4" class="video" autoplay loop muted>
+        </video>
+    </div>
+
     <header class="cabecalho">
         <img class="logo" src="imagens/logo-chapeu-mario.png" alt="Logo Mario">
 
-        <nav class="menu">
-            <a href="#">Home</a>
-            <a href="#">Detalhes</a>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Detalhes</a></li>
+            </ul>
         </nav>
     </header>
 
     <main class="container">
-        <div class="infos">
+        <div class="informacoes">
             <img class="titulo" src="imagens/titulo.png" alt="Título">
             <p class="descricao">
-                Mario é um encanador junto com seu irmão Luigi. Um dia, eles vão parar<br>no reino dos cogumelos, governado pela Princesa Peach, mas<br> ameaçado pelo rei dos Koopas, que faz de tudo para conseguir reinar<br> em todos os lugares.
+                Mario é um encanador junto com seu irmão Luigi. Um dia, eles vão parar no reino dos cogumelos, governado pela Princesa Peach, mas ameaçado pelo rei dos Koopas, que faz de tudo para conseguir reinar em todos os lugares.
             </p>
             <button class="botao">VEJA O TRAILER</button>
         </div>
@@ -33,13 +43,9 @@
         <div class="modal">
             <div class="conteudo-modal">
                 <span class="fechar-modal">❌</span>
-
-                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Cb4WV4aXBpk" title="Trailer Oficial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="1">
-                #document  
-                </iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cDNkh5WybZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
     </main>
-    <script src=""></script>
 </body>
 </html>

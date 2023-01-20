@@ -2,18 +2,150 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
 
-html, body {
+body {
     font-family: 'Poppins', cursive;
     font-weight: 500;
     color: white;
-    background-color: #F44336;
+    background-color: #7e0000;
+}
+
+
+.logo {
+    width: 65px;
 }
 
 
 
 
+.cabecalho {
+    display: flex; /* um elemento ao lado do outro */
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 1440px; /* deixar o menu mais pra esquerda */
+    margin: 0 auto;
+}
+
+.cabecalho .menu {
+    display: flex; 
+    align-items: center;
+    height: 100%;
+
+}
+
+.cabecalho nav li a {
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    padding: 20px 20px; /* desgrudar da borda da tela */
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.cabecalho nav li a:hover {
+    background-color: #d5011d;
+}
+
+
+
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; /* alinhar verticalmente */
+    height: calc(100vh - 125px); /* colocar uma altura pro elemento poder centralizar, 125 é a altura do cabecalho*/
+    padding: 0px 30px 30px;
+}
+
+.container .titulo {
+    max-width: 500px;
+}
+
+.container .descricao {
+    color: #a8adb7;
+    width: 85%;
+    font-size: 18px;
+    margin: 30px 0px;
+}
+
+.container .botao {
+    background-color: #ff0021;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    transition: 0.5s all ease-in-out;   
+}
+
+.container .botao:hover {
+    transform: scale(1.1); /* pequeno aumento de tamanho no texto/box */
+}
+
+
+
+
+.fundo-video {
+    position: absolute;
+    z-index: -1; /*posicionar o elemento no eixo z (profundidade), com valor negativo ele fica atrás */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fundo-video .video {
+    height: 100vh;
+}
+
+.fundo-video::after {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: absolute; /* trazer o after pra frente */
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
+}
+
+
+
+
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 52, 50, 0.749);
+    visibility: hidden; /* esconder o vídeo */
+}
+
+.conteudo-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* pro X ficar em cima do vídeo */
+    height: 100vh;
+    border-radius: 5px;
+    gap: 15px;
+}
+
+.fechar-modal {
+    background-color: rgba(255, 255, 255, 0.116);
+    color: #f03a17;
+    font-weight: bold;
+    font-size: 15px;
+    width: 35px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modal iframe {
+    border-width: 0;
+    width: 640px;
+    height: 360px;
+}

@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 1100px) {
+    body {
+        background-color: rgb(85, 9, 9);
+    }
+    
+    .fundo-video {
+        display: none;
+    }
+
+    .container {
+        flex-wrap: wrap; /* quando não tem espaço, coloca um elemento embaixo do outro */
+        justify-content: center;
+    }
+
+    .container .titulo {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        max-width: 70%;
+    }
+
+    .container .mario {
+        max-width: 90%;
+        padding-top: 50px;
+        padding-bottom: 20px; 
+    }
+
+    .container .informacoes {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container descricao {
+        color: white;
+        text-align: center;
+    }
+
+    
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: rgb(85, 9, 9);
+        margin-left: 15px 15px;   
+    }
+    
+    .fundo-video {
+        display: none;
+    }
+
+    .container {
+        flex-wrap: wrap; /* quando não tem espaço, coloca um elemento embaixo do outro */
+        justify-content: center;
+    }
+
+    .container .titulo {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        max-width: 85%;
+    }
+
+    .container .mario {
+        max-width: 90%;
+        padding-top: 50px;
+        padding-bottom: 20px; 
+    }
+
+    .container .botao {
+        margin-top: 10px;
+    }
+
+    .container .informacoes {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container descricao {
+        color: white;
+        text-align: center;
+    }
+
+    
+}
+
+
+
+
+
+@media screen and (max-width: 600px){
+    body {
+        background-color: rgb(85, 9, 9);
+        margin-left: 8px 8px;   
+    }
+    
+    .cabecalho {
+        padding-top: 20px;
+    }
+
+    .fundo-video {
+        display: none;
+    }
+
+    .container {
+        flex-wrap: wrap; /* quando não tem espaço, coloca um elemento embaixo do outro */
+        justify-content: center;
+    }
+
+    .container .titulo {
+        padding-top: 15px;
+        padding-bottom: 20px;
+        max-width: 85%;
+    }
+
+    .container .mario {
+        max-width: 90%;
+        padding-top: 50px;
+        padding-bottom: 20px; 
+    }
+
+    .cabecalho nav li a {
+        padding: 20px 10px;
+        font-size: 1.4em;
+    }
+
+    .container .botao {
+        margin-top: 10px;
+    }
+
+    .container .informacoes {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container descricao {
+        color: white;
+        text-align: center;
+    }
+
+    
+}
